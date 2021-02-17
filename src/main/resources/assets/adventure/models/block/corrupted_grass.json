@@ -1,0 +1,12 @@
+{
+  "parent": "block/orientable",
+  "textures": {
+    "up": "adventure:block/corrupted_grass_top",
+    "down": "adventure:block/corrupted_dirt",
+    "south": "adventure:block/corrupted_grass_side",
+    "north": "adventure:block/corrupted_grass_side",
+    "west": "adventure:block/corrupted_grass_side",
+    "east": "adventure:block/corrupted_grass_side",
+    "particle": "adventure:block/corrupted_grass_side"
+  }
+}

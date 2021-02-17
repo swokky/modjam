@@ -3,7 +3,9 @@ package me.swokky.adventure.init;
 import me.swokky.adventure.Adventure;
 import me.swokky.adventure.blocks.BaseBlock;
 import me.swokky.adventure.blocks.BaseBlockItem;
+import me.swokky.adventure.blocks.CorruptedGrassBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.util.ResourceLocation;
@@ -23,7 +25,8 @@ public class ModBlocks
 
     public static final Map<RegistryObject<Block>, Supplier<Block>> ENTRIES = new LinkedHashMap<>();
 
-    public static final RegistryObject<Block> CORRUPTED_DIRT = register("corrupted_dirt", () -> new BaseBlock(Material.ORGANIC, properties -> properties));
+    public static final RegistryObject<Block> CORRUPTED_DIRT = register("corrupted_dirt", () -> new BaseBlock(Material.ORGANIC, properties -> properties.sound(SoundType.GROUND)));
+    public static final RegistryObject<Block> CORRUPTED_GRASS = register("corrupted_grass",CorruptedGrassBlock::new);
 
 
     @SubscribeEvent
